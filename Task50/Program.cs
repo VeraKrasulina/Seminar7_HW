@@ -49,7 +49,7 @@ int[] ConvertToIntArrey(string text, char separator)
 
 int[] output = ConvertToIntArrey(imput, ' ');
 
-if (output[0] <= arrey.GetLength(0) - 1 && output[1] <= arrey.GetLength(1) - 1)
+if (output[0] <arrey.GetLength(0) && output[1] < arrey.GetLength(1))
 {
     Console.WriteLine();
     Console.WriteLine($"Значение в ячейке массива {output[0]},{output[1]} является {arrey[output[0], output[1]]}.");
